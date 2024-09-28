@@ -5,16 +5,16 @@ import { ProductCode } from "../src/types";
 describe("Math Operations", () => {
   test("teting calculate price", () => {
     const auth = new AuthPostcard({
-      userName: "52051468000109",
-      accessToken: "T5XnU4mJ8PHgyZ0nNRQYwnAVSlS9nYg3VwSnmHKm",
-      postCardNumber: "0078380251",
+      userName: "0",
+      accessToken: "0",
+      postCardNumber: "0",
     });
     const client = new CorreiosClient(auth);
     expect(
       client.preco.nacional.get(ProductCode.Sedex, {
-        cepDestino: "81510630",
-        cepOrigem: "81510630",
+        cepDestino: "0",
+        cepOrigem: "0",
       })
-    ).toBe(10);
+    ).toBe(0);
   });
 });

@@ -1,8 +1,7 @@
 {
   "name": "correios-webservice",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "dist/index.js",
-  "type": "module",
   "scripts": {
     "test": "jest",
     "build": "tsc",
@@ -15,10 +14,22 @@
       "src/**/*.ts"
     ]
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "correios",
+    "webservice",
+    "cep",
+    "calculo",
+    "frete",
+    "api",
+    "cliente"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosgomesneto/nodejs-correios-webservice-api.git"
+  },
+  "author": "Marcos Gomes Neto <marcosgomesneto@gmail.com>",
   "license": "ISC",
-  "description": "",
+  "description": "Cliente NodeJS para consumir a api nova dos Correios (CWS)",
   "devDependencies": {
     "@types/jest": "^29.5.13",
     "@types/node": "^22.7.3",
