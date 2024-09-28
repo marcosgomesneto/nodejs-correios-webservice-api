@@ -18,7 +18,7 @@ class Http {
     this._http = axios.create({
       baseURL: `${config.baseURL}${config.prefix}`,
     });
-    this._http.interceptors.request.use((config) => {
+    this._http.interceptors.request.use((config: any) => {
       if (this.auth.getToken())
         config.headers.Authorization = `Bearer ${this.auth.getToken()}`;
       return config;
