@@ -27,12 +27,13 @@ class Http {
 
   public async get<T = any, R = any>(
     endpoint: string,
-    params: T,
-    retry: boolean = true
+    params: T = {} as T,
+    retry: boolean = true,
+    apiVersion: string = this.apiVersion
   ): Promise<R> {
     try {
       if (!this.auth.getToken()) await this.authenticate();
-      const response = await this._http.get(`/${this.apiVersion}${endpoint}`, {
+      const response = await this._http.get(`/${apiVersion}${endpoint}`, {
         params,
       });
       return response.data as R;
