@@ -3,12 +3,20 @@ import { ClientConfig } from "../client";
 import { Endpoint } from "../endpoint";
 
 interface PostcodeAddressResponse {
-    coProduto: string;
-    prazoEntrega: number;
-    dataMaxima: string;
-    entregaDomiciliar: "S" | "N";
-    entregaSabado: "S" | "N";
-    entregaDomingo: "N" | "S";
+    cep: string;
+    uf: string;
+    numeroLocalidade: number;
+    localidade: string;
+    logradouro: string;
+    tipoLogradouro: string;
+    nomeLogradouro: string;
+    complemento: string;
+    abreviatura: string;
+    bairro: string;
+    tipoCEP: number;
+    lado: string;
+    numeroInicial: number;
+    numeroFinal: number;
 }
 
 class Address extends Endpoint {
