@@ -9,6 +9,10 @@ enum ProductCode {
   Sedex10ContratoAgencia = "03158",
   Sedex12ContratoAgencia = "03140",
   SedexHojeContratoAgencia = "03204",
+  ImpressoNormal = "20010",
+  ImpressoModico = "20192",
+  PacketStandard = "33162",
+  PacketExpress = "33170",
 }
 
 export { ProductCode };
