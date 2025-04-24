@@ -15,4 +15,10 @@ enum ProductCode {
   PacketExpress = "33170",
 }
 
-export { ProductCode };
+enum AdditionalService {
+  InsuranceDeclarationSedex = "019",
+  InsuranceDeclarationPac = "064",
+  InsuranceDeclarationMiniEnvios = "065",
+}
+
+export { ProductCode, AdditionalService };
