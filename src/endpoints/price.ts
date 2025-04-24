@@ -71,4 +71,4 @@ class Price {
   }
 }
 
-export { Price, PriceNacionalRequest };
+export { Price, PriceNacionalRequest, PriceNacionalResponse, AdditionalService };
