@@ -3,6 +3,11 @@ import { ClientConfig, CorreiosClient } from "../client";
 import { Endpoint } from "../endpoint";
 import { ProductCode } from "../types";
 
+interface AdditionalService {
+  coServAdicional: string;
+  pcServicoAdicional: string;
+};
+
 interface PriceNacionalRequest {
   cepDestino: string;
   cepOrigem: string;
@@ -38,6 +43,7 @@ interface PriceNacionalResponse {
   peAdValorem: string;
   vlSeguroAutomatico: string;
   qtAdicional: string;
+  servicoAdicional?: AdditionalService[];
   pcFaixa: string;
   pcFaixaVariacao: string;
   pcProduto: string;
